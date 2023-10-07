@@ -28,15 +28,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             ""id"": ""d2db0f79-511e-4574-83fd-21b6cd54636e"",
             ""actions"": [
                 {
-                    ""name"": ""WASDMovement"",
-                    ""type"": ""Value"",
-                    ""id"": ""c5e3df4f-2672-48ac-9282-460a9d10c502"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
                     ""name"": ""SpaceMovement"",
                     ""type"": ""Button"",
                     ""id"": ""b7d229ea-815d-49d9-8ddf-49c846946a91"",
@@ -47,61 +38,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""8250167c-a6d9-4bd6-a153-63dd7e044532"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""WASDMovement"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""d6def149-37ae-4bae-a4b7-912aa2df2f02"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""WASDMovement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""d880b2aa-0497-4201-a594-bffa5274f648"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""WASDMovement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""9fe3d714-7d96-449e-903c-65eb1919b102"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""WASDMovement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""5a1bab54-fc5a-41b9-a102-b31f1fb7afdf"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""WASDMovement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
                 {
                     ""name"": """",
                     ""id"": ""b6fa7172-068f-4d43-abdd-e19015897ee5"",
@@ -120,7 +56,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_WASDMovement = m_Player.FindAction("WASDMovement", throwIfNotFound: true);
         m_Player_SpaceMovement = m_Player.FindAction("SpaceMovement", throwIfNotFound: true);
     }
 
@@ -183,13 +118,11 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     // Player
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
-    private readonly InputAction m_Player_WASDMovement;
     private readonly InputAction m_Player_SpaceMovement;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
         public PlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @WASDMovement => m_Wrapper.m_Player_WASDMovement;
         public InputAction @SpaceMovement => m_Wrapper.m_Player_SpaceMovement;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -200,9 +133,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
-            @WASDMovement.started += instance.OnWASDMovement;
-            @WASDMovement.performed += instance.OnWASDMovement;
-            @WASDMovement.canceled += instance.OnWASDMovement;
             @SpaceMovement.started += instance.OnSpaceMovement;
             @SpaceMovement.performed += instance.OnSpaceMovement;
             @SpaceMovement.canceled += instance.OnSpaceMovement;
@@ -210,9 +140,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
 
         private void UnregisterCallbacks(IPlayerActions instance)
         {
-            @WASDMovement.started -= instance.OnWASDMovement;
-            @WASDMovement.performed -= instance.OnWASDMovement;
-            @WASDMovement.canceled -= instance.OnWASDMovement;
             @SpaceMovement.started -= instance.OnSpaceMovement;
             @SpaceMovement.performed -= instance.OnSpaceMovement;
             @SpaceMovement.canceled -= instance.OnSpaceMovement;
@@ -235,7 +162,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     public PlayerActions @Player => new PlayerActions(this);
     public interface IPlayerActions
     {
-        void OnWASDMovement(InputAction.CallbackContext context);
         void OnSpaceMovement(InputAction.CallbackContext context);
     }
 }

@@ -12,7 +12,7 @@ namespace Project.Scripts
         private float _ballDirection;
         private Transform _ballDirectionTransform;
         private (float min, float max) _ballSpeedRange = (min: 150f, max: 500f);
-        public float _ballSpeed;
+        private float _ballSpeed;
         private float _ballSpeedChargeRate = 150f;
         private float _spinSpeed = 150f;
         private int _currentLevel = 0;
@@ -94,7 +94,10 @@ namespace Project.Scripts
         private void LoadLevel(int levelID)
         {
             _rb.velocity = Vector2.zero;
+            _directionSprite.enabled = true;
+            _speedbar.SetActive(false);
             transform.position = new Vector3(50f * levelID, 0f, 0f);
+            _state = BallState.ShootSpin;
         }
 
         [UsedImplicitly]
