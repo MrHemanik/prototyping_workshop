@@ -11,3 +11,8 @@ This prototype uses the Tileset [Outdoor Tiles Again](https://opengameart.org/co
 Level one with direction indicator | Level three with speed indicator
 :--------:|:--------:
 ![Prototype 1 Image 1](images/proto1_1.png) | ![Prototype 1 Image 2](images/proto1_2.png)
+
+## Prototype 2: No Screen
+
+There is no screen allowed in this prototype.
+I used Unity to create a multiple choice dialogue about finding yourself in purgatory, where you talk with an automated system to handle new souls. There is also a maze involved, though which you need to traverse with audio cues.
