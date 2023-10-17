@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6640799134961383971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6640799134961383964}
+  - component: {fileID: 6640799134961383965}
+  - component: {fileID: 6640799134961383966}
+  - component: {fileID: 6640799134961383967}
+  m_Layer: 0
+  m_Name: ButtonAudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6640799134961383964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640799134961383971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5778518, y: -3.1148503, z: -0.2882808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6640799134961383965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640799134961383971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b629c5d6c4063e84fabb217ff7520925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: 0
+    clip: {fileID: 8300000, guid: 155b47d299f19cd498cc5062fdeab934, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 1
+    clip: {fileID: 8300000, guid: 64e778fc3a8be1c489c3500f4232caca, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 2
+    clip: {fileID: 8300000, guid: 02f8e5ed099870042850cad248bd876e, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 3
+    clip: {fileID: 8300000, guid: c9cac7a84d1440a45a9b6dac3627be45, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 4
+    clip: {fileID: 8300000, guid: 1f6fcb34fe016104f9cf9ec775255f44, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 5
+    clip: {fileID: 8300000, guid: 6d03d1c851d8cda458008012a3c61c97, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 6
+    clip: {fileID: 8300000, guid: 047b9fd5c33450441bc37fe912acfb13, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 7
+    clip: {fileID: 8300000, guid: 51594b9869b4cd240a807b49cf7b10df, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 8
+    clip: {fileID: 8300000, guid: ff5d1ef82d9d47147ad9b10750b80d07, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: 9
+    clip: {fileID: 8300000, guid: dc558276408ff11499fd027abe0361c7, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  aus: {fileID: 0}
+--- !u!114 &6640799134961383966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640799134961383971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: ea17a343603ffc847ab31571ea706729, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1989953d-8dd6-415e-a6bd-3fe7d6d0cb96
+    m_ActionName: Player/Forward[/Keyboard/numpad8,/Keyboard/8]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 575e3db8-463c-4ee2-821b-b476f1139336
+    m_ActionName: Player/Rotate[/Keyboard/numpad4,/Keyboard/numpad6,/Keyboard/4,/Keyboard/6]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ded04d91-0235-4cee-bb25-ea3aca59f980
+    m_ActionName: Player/Vision[/Keyboard/f8]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnOne
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 18306805-3d12-4943-a504-e018f721186f
+    m_ActionName: Player/1[/Keyboard/numpad1,/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnTwo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a0099f17-daac-4d32-944a-14bc5516328e
+    m_ActionName: Player/2[/Keyboard/numpad2,/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnThree
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fdcc98b7-da9a-407c-b048-49b953a42f27
+    m_ActionName: Player/3[/Keyboard/numpad3,/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnFour
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7bb8b38d-aa79-4a08-9a16-6fdb86e94ae5
+    m_ActionName: Player/4[/Keyboard/numpad4,/Keyboard/4]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnFive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c80fc6ce-32c7-4e2c-9446-cd3e568e6a45
+    m_ActionName: Player/5[/Keyboard/numpad5,/Keyboard/5]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnSix
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 22b48051-0a00-46fe-8963-6f09fa5a884b
+    m_ActionName: Player/6[/Keyboard/numpad6,/Keyboard/6]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnSeven
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 10157a16-1e91-4be1-9110-49594f2a2648
+    m_ActionName: Player/7[/Keyboard/numpad7,/Keyboard/7]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnEight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 59e69199-9851-448b-8b52-2daf9bba7a0b
+    m_ActionName: Player/8[/Keyboard/numpad8,/Keyboard/8]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnNine
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ded162ae-f183-46a0-b17e-ddeed951bbeb
+    m_ActionName: Player/9[/Keyboard/numpad9,/Keyboard/9]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640799134961383967}
+        m_TargetAssemblyTypeName: ButtonAudioManager, Assembly-CSharp
+        m_MethodName: OnZero
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ffa3ccd7-d63a-4964-962c-31fdb6ce8fd9
+    m_ActionName: Player/0[/Keyboard/numpad0,/Keyboard/0]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &6640799134961383967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640799134961383971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686d47ade5de4fc44a5494c29e97b726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bam: {fileID: 6640799134961383965}
