@@ -20,7 +20,7 @@ Level one with direction indicator | Level three with speed indicator
 
 I used Unity to create a multiple-choice dialogue about finding oneself in purgatory, where one talks with an automated system that handles new souls. Depending on the player's choice, they will either get obliterated or be sent on their way to find their salvation in an "endless void". The endless void is in the form of a maze, through which the player needs to traverse with audio cues. Once completed, a glitch will reset the game, where the player can either endlessly try to find their salvation or give up and obliterate themselves.
 
-To create the dialogue audio files, the text-to-speech service https://ttsfree.com/ was used.
+To create the dialogue audio files, the text-to-speech service https://ttsfree.com/ was used. For the button-press sound modified versions of "Dial 0 on Touch Tone Telephone" to "Dial 9 on Touch Tone Telephone" from https://freesfx.co.uk/sfx/dial were used.
 
 
 Normal Game View | Developer mode view of the maze
