@@ -35,6 +35,12 @@ Normal game view | Developer mode view of the maze
 
 For this prompt, a 2D incremental auto-clicker game has been created. The task is to click on the phone to gather hearts. Click upgrades can be purchased to increase the number of hearts produced per click. Alternatively, an auto-clicker upgrade is available to perform the clicking automatically. The produced heart amount and the time between clicks can be upgraded as well.
 Pictograms by <a href="https://www.flaticon.com/uicons">Flaticon</a>.
+For Audio, these sounds were used:
+[Click On Phone](https://freesound.org/people/Raclure/sounds/483600/),
+[Open/Close Shop](https://freesound.org/people/plasterbrain/sounds/396193/),
+[Upgrade Bought](https://freesound.org/people/Jagadamba/sounds/254756/),
+[Upgrade Denied](https://freesound.org/people/burnttoys/sounds/9243/)
+
 
 Starting game | Open shop (right) with auto clicker bought (left from phone) and owned hearts (top left)
 :--------:|:--------:
