@@ -26,3 +26,11 @@ To create the dialogue audio files, the text-to-speech service https://ttsfree.c
 Normal Game View | Developer mode view of the maze
 :--------:|:--------:
 ![Prototype 2 Image 1](images/proto2_1.png) | ![Prototype 2 Image 2](images/proto2_2.png)
+
+## Prototype 3: Pictograms
+
+**Premise: Develop a prototype that only uses pictograms. Original prompt name: 'Susan Kares Dreams'**<br>
+**Developed with: Unity**<br>
+**Language: None**
+
+Pictograms by <a href="https://www.flaticon.com/uicons">Flaticon</a>

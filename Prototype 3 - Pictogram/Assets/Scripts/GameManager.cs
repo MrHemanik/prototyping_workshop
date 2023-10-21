@@ -7,11 +7,15 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager Instance { get; set; }
     public NumberVisualizer nv;
+    public StatsVisualizer sv;
     public int hearts = 0;
     public int heartsPerClick = 1;
     public int heartsPerAutoClick = 0;
     public int heartsPerAutoClickInterval = 2000;
     public Coroutine _autoClickerCoroutine;
+    public AudioSource autoClickAudioSource;
+    public Animation phoneAnimation;
+    public Animation autoClickAnimation;
     private void Awake() 
     {
         if (Instance != null && Instance != this) 
@@ -23,6 +27,13 @@ public class GameManager : MonoBehaviour
             Instance = this; 
             DontDestroyOnLoad(this);
         } 
+    }
+
+    private void Start()
+    {
+        sv.UpdateHPC(heartsPerClick);
+        sv.UpdateHPAC(heartsPerAutoClick);
+        sv.UpdateHPACI(heartsPerAutoClickInterval);
     }
 
     public void AddHeartsPerClick()
@@ -47,17 +58,24 @@ public class GameManager : MonoBehaviour
     {
         RemoveHearts(price);
         heartsPerClick = hpc;
+        sv.UpdateHPC(hpc);
     }
     public void AddAutoClickUpgrade(int price, int hpac)
     {
-        if (_autoClickerCoroutine == null) StartAutoClickerCoroutine(); 
+        if (_autoClickerCoroutine == null)
+        {
+            StartAutoClickerCoroutine();
+            sv.VisualizeAutoStats();
+        } 
         RemoveHearts(price);
         heartsPerAutoClick = hpac;
+        sv.UpdateHPAC(hpac);
     }
     public void AddAutoSpeedUpgrade(int price, int hpaci)
     {
         RemoveHearts(price);
         heartsPerAutoClickInterval = hpaci;
+        sv.UpdateHPACI(hpaci);
     }
 
     public void StartAutoClickerCoroutine()
@@ -72,7 +90,12 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("AutoClickerCoroutine Click");
             yield return new WaitForSeconds(heartsPerAutoClickInterval/1000f);
+            autoClickAnimation.Play();
             AddHeartsPerAutoClick();
+            autoClickAudioSource.Play();
+            phoneAnimation.Stop();
+            phoneAnimation.Play();
+            
         }
     }
 }

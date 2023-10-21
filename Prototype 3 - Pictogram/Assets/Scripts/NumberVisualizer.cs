@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class NumberVisualizer : MonoBehaviour
     {
         new Color32(255, 0, 0, 200),   // Red
         new Color32(255, 125, 0, 200), // Orange
-        new Color32(255, 255, 0, 200), // Yellow
+        new Color32(215, 199, 34, 180), // Yellow
         new Color32(0, 255, 0, 200),   // Green
         new Color32(0, 255, 255, 200), // Cyan
         new Color32(0, 0, 255, 200),   // Blue
@@ -19,8 +20,7 @@ public class NumberVisualizer : MonoBehaviour
 
     private Vector3 baseDistanceVector = new Vector3(5, -5, 0);
     private Vector3 multiplierVector = new Vector3(23, 0, 0);
-
-    // Update is called once per frame
+    
     public void VisualizeHearts(int num)
     {
         foreach (Transform child in transform)

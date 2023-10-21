@@ -9,13 +9,16 @@ public class ShopManager : MonoBehaviour
     public NumberVisualizer nvClickUpgrade;
     public NumberVisualizer nvAutoClickUpgrade;
     public NumberVisualizer nvAutoSpeedUpgrade;
+    public AudioSource asDenied;
+    public AudioSource asSucess;
     private (int, int)[] _clickUpgrades = new (int, int)[]
     {
         (20, 2), //Costs 20 Hearts, sets clickAmount to 2
         (100, 3),
         (400, 5),
         (1000, 8),
-        (10000, 10)
+        (10000, 10),
+        (100000, 20)
     };
     private (int, int)[] _autoClickUpgrades = new (int, int)[]
     {
@@ -24,7 +27,9 @@ public class ShopManager : MonoBehaviour
         (300, 3),
         (1000, 4),
         (5000, 7),
-        (10000, 10)
+        (10000, 10),
+        (50000, 20),
+        (100000, 30)
     };
     private (int, int)[] _autoSpeedUpgrades = new (int, int)[]
     {
@@ -34,7 +39,9 @@ public class ShopManager : MonoBehaviour
         (1000, 700),
         (2000, 500),
         (5000, 200),
-        (10000, 100)
+        (10000, 100),
+        (50000, 50),
+        (100000, 25)
     };
     private int _currentBoughtClickUpgrade = 0;
     private int _currentBoughtAutoClickUpgrade = 0;
@@ -45,6 +52,7 @@ public class ShopManager : MonoBehaviour
         nvClickUpgrade.VisualizeHearts(_clickUpgrades[_currentBoughtClickUpgrade].Item1);
         nvAutoClickUpgrade.VisualizeHearts(_autoClickUpgrades[_currentBoughtAutoClickUpgrade].Item1);
         nvAutoSpeedUpgrade.VisualizeHearts(_autoSpeedUpgrades[_currentBoughtAutoSpeedUpgrade].Item1);
+        nvAutoSpeedUpgrade.transform.parent.gameObject.SetActive(false);
     }
 
     public void CheckClickUpgrade()
@@ -54,10 +62,11 @@ public class ShopManager : MonoBehaviour
         {
             NextClickUpgrade();
             gm.AddClickUpgrade(curUpgrade.Item1, curUpgrade.Item2);
+            asSucess.Play();
         }
         else
         {
-            PlayNotEnoughSound();
+            asDenied.Play();
         }
     }
 
@@ -74,10 +83,12 @@ public class ShopManager : MonoBehaviour
         {
             NextAutoClickUpgrade();
             gm.AddAutoClickUpgrade(curUpgrade.Item1, curUpgrade.Item2);
+            asSucess.Play();
+            nvAutoSpeedUpgrade.transform.parent.gameObject.SetActive(true);
         }
         else
         {
-            PlayNotEnoughSound();
+            asDenied.Play();
         }
     }
 
@@ -94,10 +105,11 @@ public class ShopManager : MonoBehaviour
         {
             NextAutoSpeedUpgrade();
             gm.AddAutoSpeedUpgrade(curUpgrade.Item1, curUpgrade.Item2);
+            asSucess.Play();
         }
         else
         {
-            PlayNotEnoughSound();
+            asDenied.Play();
         }
     }
 
@@ -106,14 +118,4 @@ public class ShopManager : MonoBehaviour
         _currentBoughtAutoSpeedUpgrade++;
         nvAutoSpeedUpgrade.VisualizeHearts(_autoSpeedUpgrades[_currentBoughtAutoSpeedUpgrade].Item1);
     }
-    
-    
-    
-
-    private void PlayNotEnoughSound()
-    {
-        //Play sound that you cant buy
-    }
-    
-    
 }
