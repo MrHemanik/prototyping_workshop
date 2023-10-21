@@ -23,7 +23,7 @@ I used Unity to create a multiple-choice dialogue about finding oneself in purga
 To create the dialogue audio files, the text-to-speech service https://ttsfree.com/ was used. For the button-press sound modified versions of "Dial 0 on Touch Tone Telephone" to "Dial 9 on Touch Tone Telephone" from https://freesfx.co.uk/sfx/dial were used.
 
 
-Normal Game View | Developer mode view of the maze
+Normal game view | Developer mode view of the maze
 :--------:|:--------:
 ![Prototype 2 Image 1](images/proto2_1.png) | ![Prototype 2 Image 2](images/proto2_2.png)
 
@@ -33,4 +33,10 @@ Normal Game View | Developer mode view of the maze
 **Developed with: Unity**<br>
 **Language: None**
 
-Pictograms by <a href="https://www.flaticon.com/uicons">Flaticon</a>
+For this prompt, a 2D incremental auto-clicker game has been created. The task is to click on the phone to gather hearts. Click upgrades can be purchased to increase the number of hearts produced per click. Alternatively, an auto-clicker upgrade is available to perform the clicking automatically. The produced heart amount and the time between clicks can be upgraded as well.
+Pictograms by <a href="https://www.flaticon.com/uicons">Flaticon</a>.
+
+Starting game | Open shop (right) with auto clicker bought (left from phone) and owned hearts (top left)
+:--------:|:--------:
+![Prototype 3 Image 1](images/proto3_1.png) | ![Prototype 3 Image 2](images/proto3_2.png)
+
