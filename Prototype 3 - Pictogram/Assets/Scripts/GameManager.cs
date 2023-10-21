@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public AudioSource autoClickAudioSource;
     public Animation phoneAnimation;
     public Animation autoClickAnimation;
+    public GameObject autoClickerVisualizer;
     private void Awake() 
     {
         if (Instance != null && Instance != this) 
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
         if (_autoClickerCoroutine == null)
         {
             StartAutoClickerCoroutine();
+            autoClickerVisualizer.SetActive(true);
             sv.VisualizeAutoStats();
         } 
         RemoveHearts(price);
