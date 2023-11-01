@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnScroll(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && !_isMouseMovementOn)
         {
             _targetZ += context.ReadValue<Vector2>().normalized.y * _speed;
             _targetZ = Math.Clamp(_targetZ, _lowestZ, _highestZ);
@@ -46,9 +46,7 @@ public class PlayerController : MonoBehaviour
     public void OnChangeInputType(InputAction.CallbackContext context)
     {
         if (!context.started) return;
-        Debug.Log("I");
         _isMouseMovementOn = !_isMouseMovementOn;
-        Debug.Log(_isMouseMovementOn);
     }
 
     public void OnMouseMove(InputAction.CallbackContext context)

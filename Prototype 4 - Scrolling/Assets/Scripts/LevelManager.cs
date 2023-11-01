@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     
     public TextMeshProUGUI scoreText;
     public GameObject levelEndCanvas;
+    public GameObject nextLevelCanvasObjects;
     public TextMeshProUGUI highscoreText;
     public GameObject newHighscoreText;
     public GameObject mainMenuCanvas;
@@ -46,10 +47,10 @@ public class LevelManager : MonoBehaviour
             {
                 _highscore = _score;
                 SaveHighscore();
-                
                 newHighscoreText.SetActive(true);
             }
             highscoreText.text = _highscore.ToString("0");
+            nextLevelCanvasObjects.SetActive(curLev < LevelContent.Levels.Length);
             levelEndCanvas.SetActive(true);
             
         }));
@@ -84,6 +85,7 @@ public class LevelManager : MonoBehaviour
 
     public void ResetLevel()
     {
+        if (_levelGenerationCoroutine == null) return;
         StopCoroutine(_levelGenerationCoroutine);
         while(lg.transform.childCount>0)
         {

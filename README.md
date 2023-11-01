@@ -34,6 +34,7 @@ Normal game view | Developer mode view of the maze
 **Language: None**
 
 For this prompt, a 2D incremental auto-clicker game has been created. The task is to click on the phone to gather hearts. Click upgrades can be purchased to increase the number of hearts produced per click. Alternatively, an auto-clicker upgrade is available to perform the clicking automatically. The produced heart amount and the time between clicks can be upgraded as well.
+Designing this prototype was challenging, as I couldn't use normal images or even solid-colored rectangles for UI.
 
 **External Sources:** Pictograms by <a href="https://www.flaticon.com/uicons">Flaticon</a>.
 For Audio, these sounds were used:
@@ -50,7 +51,7 @@ Starting game | Open shop (right) with auto clicker bought (left from phone) and
 
 ## Prototype 4: Scrolling
 
-**Premise: Develop a prototype with scrolling as the main interaction'**<br>
+**Premise: Develop a prototype with scrolling as the main interaction**<br>
 **Developed with: Unity**<br>
 **Language: English**
 
