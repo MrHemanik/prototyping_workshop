@@ -65,3 +65,25 @@ The audio for each level is generated with an Oscillator-Script, using elements 
 Main menu with level selection | Level 3 'Carol of the bells' on double speed | Level finished screen
 :--------:|:--------:|:--------:
 ![Prototype 4 Image 1](images/proto4_1.gif) | ![Prototype 4 Image 2](images/proto4_2.gif) | ![Prototype 4 Image 3](images/proto4_3.gif)
+
+## Prototype 5: Read The Fucking Manual (RTFM)
+
+**Premise: Develop a prototype where a manual is needed for**<br>
+**Developed with: Unity**<br>
+**Language: English**
+
+This is a two-player game. Player one has a manual and player two plays on the device. Player one may not see the screen and player two may not see the manual. They need to communicate to solve different problems, each with randomized components. They need to finish their tasks before the safety level reaches 0%.
+
+**External Sources:** 
+[Train Interior Image](https://www.axiomtek.com/Default.aspx?MenuId=Solutions&FunctionId=SolutionView&ItemId=1698&Title=Train+Control+System), 
+[Background Ticking Sound](https://mixkit.co/free-sound-effects/game/),
+[Screwdriver Image](https://www.campbellsci.de/35675),
+[Wrong Answer Sound](https://freesound.org/people/burnttoys/sounds/9243/),
+[Right Answer Sound](https://freesound.org/people/plasterbrain/sounds/396193/),
+[Win Sound](https://pixabay.com/sound-effects/short-crowd-cheer-6713/),
+[Lose Sound](https://pixabay.com/sound-effects/fail-144746/).
+
+
+In-Game | Issue 1 out of 4
+:--------:|:--------:
+![Prototype 5 Image 1](images/proto5_1.jpg) | ![Prototype 5 Image 2](images/proto5_2.png)
