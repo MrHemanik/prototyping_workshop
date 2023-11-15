@@ -17,7 +17,6 @@ public class LevelGenerator : MonoBehaviour
             highestNote= Mathf.Max(highestNote, note.ToNumber());
             lowestNote= Mathf.Min(lowestNote, note.ToNumber());
         }
-        Debug.Log("Lowest Note:"+lowestNote+"; Highest Note:" + highestNote);
         float noteSpan = highestNote - lowestNote + 1; //from 2 to 5 = 5-2+1 = 4
         float noteWidth = (_highestZ-_lowestZ) / noteSpan;
         float GetNoteZPosition(Note n)

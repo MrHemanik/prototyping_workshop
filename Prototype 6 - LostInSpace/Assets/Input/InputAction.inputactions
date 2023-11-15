@@ -1,0 +1,65 @@
+{
+    "name": "InputAction",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "b23c81e5-7c61-4adf-bfbd-071d34c5708e",
+            "actions": [
+                {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "e794e950-5bc1-4254-af0e-21aa026576e0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CheatResources",
+                    "type": "Button",
+                    "id": "eb400868-37c2-40a0-b24a-13bbb7a4650b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "88f013ac-eb23-4ddb-9e71-6bd7a1bff68b",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc9125f1-7b90-4148-ad67-93b53adcab3e",
+                    "path": "<Keyboard>/f5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2bcb8694-3d13-4b7a-8d9c-87dcaab756bf",
+                    "path": "<Keyboard>/f9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CheatResources",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
