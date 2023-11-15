@@ -10,9 +10,9 @@ I created a 2D Unity game that revolves around controlling a ball solely using t
 
 **External Sources:** This prototype uses the Tileset [Outdoor Tiles Again](https://opengameart.org/content/outdoor-tiles-again) from [Michele "Buch" Bucelli](https://opengameart.org/content/outdoor-tiles-again).
 
-Level one with direction indicator | Level three with speed indicator
-:--------:|:--------:
-![Prototype 1 Image 1](images/proto1_1.png) | ![Prototype 1 Image 2](images/proto1_2.png)
+|     Level one with direction indicator      |      Level three with speed indicator       |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 1 Image 1](images/proto1_1.png) | ![Prototype 1 Image 2](images/proto1_2.png) |
 
 ## Prototype 2: No Screen
 **Premise: Develop a prototype that uses no visual output**<br>
@@ -23,9 +23,9 @@ I used Unity to create a multiple-choice dialogue about finding oneself in purga
 
 **External Sources:** To create the dialogue audio files, the text-to-speech service https://ttsfree.com/ was used. For the button-press sound modified versions of "Dial 0 on Touch Tone Telephone" to "Dial 9 on Touch Tone Telephone" from https://freesfx.co.uk/sfx/dial were used.
 
-Normal game view | Developer mode view of the maze
-:--------:|:--------:
-![Prototype 2 Image 1](images/proto2_1.png) | ![Prototype 2 Image 2](images/proto2_2.png)
+|              Normal game view               |       Developer mode view of the maze       |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 2 Image 1](images/proto2_1.png) | ![Prototype 2 Image 2](images/proto2_2.png) |
 
 ## Prototype 3: Pictograms
 
@@ -44,10 +44,9 @@ For Audio, these sounds were used:
 [Upgrade Denied](https://freesound.org/people/burnttoys/sounds/9243/)
 
 
-Starting game | Open shop (right) with auto clicker bought (left from phone) and owned hearts (top left)
-:--------:|:--------:
-![Prototype 3 Image 1](images/proto3_1.png) | ![Prototype 3 Image 2](images/proto3_2.png)
-
+|                Starting game                | Open shop (right) with auto clicker bought (left from phone) and owned hearts (top left) |
+|:-------------------------------------------:|:----------------------------------------------------------------------------------------:|
+| ![Prototype 3 Image 1](images/proto3_1.png) |                       ![Prototype 3 Image 2](images/proto3_2.png)                        |
 
 ## Prototype 4: Scrolling
 
@@ -62,9 +61,9 @@ For this prompt, a rhythm game has been created. Choose between three different 
 The audio for each level is generated with an Oscillator-Script, using elements from [this video](https://www.youtube.com/watch?v=GqHFGMy_51c). For button-clicks, this sound was used: [Button Click](https://freesound.org/people/Jagadamba/sounds/254756/).
 
 
-Main menu with level selection | Level 3 'Carol of the bells' on double speed | Level finished screen
-:--------:|:--------:|:--------:
-![Prototype 4 Image 1](images/proto4_1.gif) | ![Prototype 4 Image 2](images/proto4_2.gif) | ![Prototype 4 Image 3](images/proto4_3.gif)
+|       Main menu with level selection        | Level 3 'Carol of the bells' on double speed |            Level finished screen            |
+|:-------------------------------------------:|:--------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 4 Image 1](images/proto4_1.gif) | ![Prototype 4 Image 2](images/proto4_2.gif)  | ![Prototype 4 Image 3](images/proto4_3.gif) |
 
 ## Prototype 5: Read The Fucking Manual (RTFM)
 
@@ -84,6 +83,28 @@ This is a two-player game. Player one has a manual and player two plays on the d
 [Lose Sound](https://pixabay.com/sound-effects/fail-144746/).
 
 
-In-Game | Issue 1 out of 4
-:--------:|:--------:
-![Prototype 5 Image 1](images/proto5_1.jpg) | ![Prototype 5 Image 2](images/proto5_2.png)
+|                   In-Game                   |              Issue 1 out of 4               |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 5 Image 1](images/proto5_1.jpg) | ![Prototype 5 Image 2](images/proto5_2.png) |
+
+## Prototype 6: From The Future
+
+**Premise: Develop a prototype with an interface that could be from a Sci-Fi movie**<br>
+**Developed with: Unity**<br>
+**Language: English**
+
+The player is lost in space. They need to use their remaining fuel to travel to planets, collect resources and repair their ship. The goal is to collect 100 Plasma Resin to repair the FTL Drive to fly back home. If there is no fuel remaining, the player will be lost in space, thus failing.
+
+**External Sources:** 
+[Sound Effects](https://mixkit.co/free-sound-effects/sci-fi/),
+[Spaceship Model](https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c88be630697f9cb#download),
+[Space Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503)
+
+|                Start screen                 |               Hover on planet               |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 6 Image 1](images/proto6_1.jpg) | ![Prototype 6 Image 2](images/proto6_2.jpg) |
+|               **Player Menu**               |       **with Vision Range upgrades**        |
+| ![Prototype 6 Image 3](images/proto6_3.jpg) | ![Prototype 6 Image 4](images/proto6_4.jpg) |
+|             **Frontal Camera**              |                                             |
+| ![Prototype 6 Image 5](images/proto6_5.jpg) |                                             |  
+
