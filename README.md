@@ -108,3 +108,26 @@ The player is lost in space. They need to use their remaining fuel to travel to 
 |             **Frontal Camera**              |                                             |
 | ![Prototype 6 Image 5](images/proto6_5.jpg) |                                             |  
 
+
+## Prototype 6: Alternative Control
+
+**Premise: Develop a prototype without using a mouse, keyboard, controller,trackpad or touch**<br>
+**Developed with: Unity & Arduino**<br>
+**Language: English**
+
+The player needs to avoid obstacles while travelling through an endlessly generated obstacle course. The goal is to come the farthest. The game is over when the ship collides with an obstacle.
+The player controls the direction of the ship with a gyroscope sensor that is positioned on either hand, while the speed is controlled with the other hand using an ultrasound (distance) sensor.
+The closer the hand is to the ultrasound sensor, the slower the ship moves. The player can also move their hand up or down to move the ship in that direction. To move either left or right, the player needs to rotate their hand in that direction. For the input an arduino is used that communicates with unity via serial communication.
+
+**External Sources:**
+[Background Music](https://uppbeat.io/browse/artist/moire),
+[Spaceship Model](https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c88be630697f9cb#download),
+[Space Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503)
+
+|                Start screen                 |                                                        Actively playing                                                         |
+|:-------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|
+| ![Prototype 7 Image 1](images/proto7_1.png) |                                           ![Prototype 7 Image 2](images/proto7_2.jpg)                                           |
+|              **Arduino Setup**              |                                               **Demo video (Click on the Image)**                                               |
+| ![Prototype 7 Image 3](images/proto7_3.jpg) | [![Prototype 7 Image 2](https://img.youtube.com/vi/D26eE1mlBug/maxresdefault.jpg)](https://www.youtube.com/watch?v=D26eE1mlBug) |
+
+
