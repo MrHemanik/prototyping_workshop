@@ -109,7 +109,7 @@ The player is lost in space. They need to use their remaining fuel to travel to 
 | ![Prototype 6 Image 5](images/proto6_5.jpg) |                                             |  
 
 
-## Prototype 6: Alternative Control
+## Prototype 7: Alternative Control
 
 **Premise: Develop a prototype without using a mouse, keyboard, controller,trackpad or touch**<br>
 **Developed with: Unity & Arduino**<br>
@@ -129,5 +129,40 @@ The closer the hand is to the ultrasound sensor, the slower the ship moves. The 
 | ![Prototype 7 Image 1](images/proto7_1.png) |                                           ![Prototype 7 Image 2](images/proto7_2.jpg)                                           |
 |              **Arduino Setup**              |                                               **Demo video (Click on the Image)**                                               |
 | ![Prototype 7 Image 3](images/proto7_3.jpg) | [![Prototype 7 Image 2](https://img.youtube.com/vi/D26eE1mlBug/maxresdefault.jpg)](https://www.youtube.com/watch?v=D26eE1mlBug) |
+
+
+## Prototype 8: 2 cards 4 u
+
+**Premise: Draw (at least) 2 cards, make a game with what is written on the cards.**<br>
+**Cards Drawn:**
+1. "Animal Organ (instrument)" [german: Tierorgel] in reference to the [Piganino](https://en.wikipedia.org/wiki/Piganino). Due to the animal cruelty involved, I decided to reword it to "Animal Harmony"
+2. "Skeumorphism & Flat Design" (choose either one)
+3. "voting"
+
+**Developed with: Unity**<br>
+**Language: English**
+
+To challenge myself a bit more, I drew a third card. For the animal harmony I decided to implement three animals, each with their own sound and each having 3 different pitches.
+The goal is to make a song with the animals and getting all 3 positive votes from the judges. The judges will vote after a certain amount of time, so the player needs to be quick to impress them. Each judge has their own sound preferences and likes/dislikes different animal sounds and sound-combinations.
+I decided to spin the theme of the design card a bit and take skeumorphism too extreme, only using stockphotos and text. The UI is designed to look like a stage, with the judges and the animals being on it. 
+
+**External Sources:**
+[Cat Sound](https://mixkit.co/free-sound-effects/animals/),
+[Cat Images](https://github.com/tndvjd/pop-cat/tree/master/images),
+[Dog Sound](https://www.youtube.com/watch?v=h5o5XojstYs),
+[Dog Images](https://www.stickpng.com/cat/memes/gabe-the-dog?page=1),
+[Pig Sound](https://www.fesliyanstudios.com/royalty-free-sound-effects-download/pig-261),
+[Pig Image Singing](https://www.vecteezy.com/png/27394937-surprised-pig-with-huge-eyes),
+[Pig Image Neutral](https://www.vecteezy.com/png/27395219-surprised-pig-with-huge-eyes),
+[Background Image](https://de.freepik.com/fotos-premium/leeres-fernsehstudio-niemand-fernseher-oder-kabel-neues-netzwerk-live-studio_64189842.htm),
+[Judge 1 Images](https://depositphotos.com/de/model/71095139.html),
+[Judge 2 Images](https://depositphotos.com/de/model/83302714.html),
+[Judge 3 Images](https://depositphotos.com/de/model/83241440.html)
+
+|                Start Screen                 |                 Preparation                 |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 8 Image 1](images/proto8_1.png) | ![Prototype 8 Image 2](images/proto8_2.jpg) |
+|            **Actively Playing**             |               **End Screen**                |
+| ![Prototype 8 Image 3](images/proto8_3.jpg) | ![Prototype 8 Image 2](images/proto8_4.png) |
 
 
