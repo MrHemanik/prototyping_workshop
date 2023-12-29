@@ -217,8 +217,8 @@ The game starts off as a variation of Prototype 1, a minigolf game where you mov
 <br>Models:
 [Spaceship Model](https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c88be630697f9cb#download).
 
-|               Picking up key                |            Opening door with key            |
+|               Level 3 with slight change    |   Portal in level 4 to space           |
 |:-------------------------------------------:|:-------------------------------------------:|
-| ![Prototype 9 Image 1](images/proto9_1.gif) | ![Prototype 9 Image 2](images/proto9_2.gif) |
-|             **Picking up Axe**              |         **Opening Escape with Axe**         |
-| ![Prototype 9 Image 3](images/proto9_3.gif) | ![Prototype 9 Image 4](images/proto9_4.gif) |
+| ![Prototype 10 Image 1](images/proto10_1.gif) | ![Prototype 10 Image 2](images/proto10_2.gif) |
+|             **Using gravity to ones advantage**              |         **Maneuvering around black holes**         |
+| ![Prototype 10 Image 3](images/proto10_3.gif) | ![Prototype 10 Image 4](images/proto10_4.gif) |
