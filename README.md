@@ -98,7 +98,8 @@ The player is lost in space. They need to use their remaining fuel to travel to 
 **External Sources:** 
 [Sound Effects](https://mixkit.co/free-sound-effects/sci-fi/),
 [Spaceship Model](https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c88be630697f9cb#download),
-[Space Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503)
+[Space Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503),
+[Planet (Moon)](https://astrogeology.usgs.gov/search/map/Moon/LRO/LROC_WAC/Lunar_LRO_LROC-WAC_Mosaic_global_100m_June2013).
 
 |                Start screen                 |               Hover on planet               |
 |:-------------------------------------------:|:-------------------------------------------:|
@@ -168,19 +169,19 @@ I decided to spin the theme of the design card a bit and take skeumorphism too e
 
 ## Prototype 9: Doors
 
-**Premise:**<br>
+**Premise: sDevelop a game where doors are the main interaction**<br>
 **Developed with: Unity**<br>
 **Language: English**
 
 In this game you need to escape a dungeon. Look for keys to open doors and find the exit. Break open the escape ladder with an axe, hidden somewhere in the dungeon. There is no fail condition or timer.
 
 **External Sources:**
-Assets:
+<br>Assets:
 [Stylized Hand Painted Dungeon](https://assetstore.unity.com/packages/3d/environments/stylized-hand-painted-dungeon-free-173934),
 [Low Poly Simple Medieval Props](https://assetstore.unity.com/packages/3d/props/low-poly-simple-medieval-props-258397).
-Background music by 
+<br>Background music by 
 [Alexander Nakarada - Adventure](https://www.youtube.com/watch?v=0iVgv5OP4so).
-Sound-Effects from Pixabay:
+<br>Sound-Effects from Pixabay:
 [Keys Collect](https://pixabay.com/sound-effects/key-get-39925/),
 [Door Locked](https://pixabay.com/sound-effects/rattling-door-81387/),
 [Unlocking Door](https://pixabay.com/sound-effects/locking-door-6854/),
@@ -197,5 +198,27 @@ Sound-Effects from Pixabay:
 | ![Prototype 9 Image 3](images/proto9_3.gif) | ![Prototype 9 Image 4](images/proto9_4.gif) |
 
 
+## Prototype 10: Mix and Match
 
+**Premise: Develop a game using two of your previous prototypes**<br>
+**Mixed Prototypes: Prototype 1 & 6**<br>
+**Developed with: Unity**<br>
+**Language: English**
 
+The game starts off as a variation of Prototype 1, a minigolf game where you move the ball with one button. In this version the player can aim the ball with their mouse. At the end of level 4, instead of a regular goal, there is a portal to bring the player to the second segment of the game. Instead of regular minigolf, the player controls a spaceship that needs to navigate to the right planet. The gravitational pull of the other planets (and black holes) make it hard to travel through space, for you can only aim and choose where to move while stationary.
+
+**External Sources:**
+<br>Images:
+[Black Hole](https://universe.nasa.gov/resources/182/black-hole/),
+[Purple Portal](https://www.reddit.com/r/PixelArt/comments/jwbgi5/p_u_r_p_l_e_p_o_r_t_a_l/),
+[Planet (Moon)](https://astrogeology.usgs.gov/search/map/Moon/LRO/LROC_WAC/Lunar_LRO_LROC-WAC_Mosaic_global_100m_June2013).
+<br>Tileset:
+[Outdoor Tiles Again](https://opengameart.org/content/outdoor-tiles-again) from [Michele "Buch" Bucelli](https://opengameart.org/content/outdoor-tiles-again).
+<br>Models:
+[Spaceship Model](https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c88be630697f9cb#download).
+
+|               Picking up key                |            Opening door with key            |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 9 Image 1](images/proto9_1.gif) | ![Prototype 9 Image 2](images/proto9_2.gif) |
+|             **Picking up Axe**              |         **Opening Escape with Axe**         |
+| ![Prototype 9 Image 3](images/proto9_3.gif) | ![Prototype 9 Image 4](images/proto9_4.gif) |

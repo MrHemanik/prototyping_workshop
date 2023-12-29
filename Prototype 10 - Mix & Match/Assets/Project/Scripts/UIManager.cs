@@ -1,16 +1,12 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Project.Scripts
 {
-        public class UIManager : MonoBehaviour
+    public class UIManager : MonoBehaviour
+    {
+        public void QuitGame()
         {
-
-                public void QuitGame()
-                {
-                        Application.Quit();
-                        UnityEditor.EditorApplication.isPlaying = false;
-                }
-
+            Application.Quit();
         }
+    }
 }

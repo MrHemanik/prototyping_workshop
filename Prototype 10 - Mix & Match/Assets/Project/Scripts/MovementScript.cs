@@ -136,6 +136,12 @@ namespace Project.Scripts
             _speedbar.SetActive(false);
             _state = BallState.ShootSpin;
             transform.position = new Vector3((levelID < 4 ? 50f : 100f) * levelID, 0f, 0f);
+            if(levelID < 4){
+                _rb.drag = 1f;
+                _rb.angularDrag = 0.1f;
+                _rb.sharedMaterial.bounciness = 1f;
+                _rb.sharedMaterial.friction = 0f;
+            }
             if (levelID >= 4 && !_isSpace )
             {
                 _rb.drag = 0f;
@@ -148,6 +154,7 @@ namespace Project.Scripts
                 _deathsUIElement.SetActive(true);
                 _isSpace = true;
             }
+
             if (levelID >= 10)
                 _endScreen.SetActive(true);
         }
