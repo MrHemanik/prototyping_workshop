@@ -169,7 +169,7 @@ I decided to spin the theme of the design card a bit and take skeumorphism too e
 
 ## Prototype 9: Doors
 
-**Premise: sDevelop a game where doors are the main interaction**<br>
+**Premise: Develop a game where doors are the main interaction**<br>
 **Developed with: Unity**<br>
 **Language: English**
 
@@ -222,3 +222,28 @@ The game starts off as a variation of Prototype 1, a minigolf game where you mov
 | ![Prototype 10 Image 1](images/proto10_1.gif) | ![Prototype 10 Image 2](images/proto10_2.gif) |
 |             **Using gravity to ones advantage**              |         **Maneuvering around black holes**         |
 | ![Prototype 10 Image 3](images/proto10_3.gif) | ![Prototype 10 Image 4](images/proto10_4.gif) |
+
+## Prototype 11: Free Topic
+
+**Premise: Develop a game of your choosing. You need to be able to name a topic**<br>
+**Chosen Topic: Resource Management**<br>
+**Developed with: Unity**<br>
+**Language: None/English**
+
+This prototype is relatively simple. Harvest resources, expand the landmass and build a house. 
+
+**External Sources:**
+<br>Images:
+[Dinosaur Sprites](https://arks.itch.io/dino-characters).
+<br>Sounds:
+[Background Music - Delightful by Ahjay Stelino](https://www.youtube.com/watch?v=sSGFsE_auao),
+[Buy](https://mixkit.co/free-sound-effects/bell/),
+[Harvest](https://mixkit.co/free-sound-effects/roar/).
+<br>Models:
+[House Model](https://assetstore.unity.com/packages/3d/environments/fantasy/lowpoly-baker-s-house-26443).
+
+|               Start   |   Harvesting Resources           |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![Prototype 11 Image 1](images/proto11_1.jpg) | ![Prototype 10 Image 2](images/proto11_2.gif) |
+|             **Land with Iron Ore**              |         **House at the end of the prototype**         |
+| ![Prototype 11 Image 3](images/proto11_3.png) | ![Prototype 10 Image 4](images/proto11_4.jpg) |
